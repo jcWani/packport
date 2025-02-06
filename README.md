@@ -1,37 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- PROJECT LOGO -->
+<br />
+<h1 align="center">Packport</h1>
 
-## Getting Started
+<!-- ABOUT THE PROJECT -->
 
-First, run the development server:
+## About The Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+PackPort is a modern e-commerce website that showcases different kinds of bags. This project was built as part of my learning journey, following "The Ultimate Fullstack Next.JS 14 Course 2024 Edition" by DevelopedByEd. It helped me gain hands-on experience with Next.js 14, authentication, payments, and more while customizing and expanding upon the base project.
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Screenshot](/public/home.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!-- APPLICATION'S FEATURES -->
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 Features
 
-## Learn More
+- Products List: browse a variety of bags with detailed descriptions and pricing.
 
-To learn more about Next.js, take a look at the following resources:
+- Search & Filtering: find the perfect bag using search and category filters.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Cart & Checkout: add items to your cart and complete purchases with Stripe.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- User Authentication: secure login and signup with NextAuth.
 
-## Deploy on Vercel
+- Database Integration: uses PostgreSQL with NeonDB for efficient data management.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Sleek UI: styled with Tailwind CSS and shadcn for a polished look.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# packport
+<!-- TECHNOLOGY USED -->
+
+## 👨‍💻 Technology Used
+
+The Wayfarers Rest client web application is built using the following technologies and libraries:
+
+- **Next.js**: full-stack React framework
+
+- **Tailwind CSS**: utility-first CSS framework
+
+- **shadcn**: uI components for a modern design
+
+- **PostgreSQL & NeonDB**: database solutions
+
+- **Drizzle ORM**: typeScript-first ORM for database management
+
+- **Zustand**: state management
+
+- **NextAuth v5**: authentication solution
+
+- **Stripe**: payment processing
+
+- **Algolia Search**: fast and powerful search experience
+
+- **Framer Motion**: smooth animations
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo
+
+[https://packport.vercel.app/](https://packport.vercel.app/)
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgments
+
+This appplication was the main project and developed as part of the [course](https://www.ultimatenextjs.com/) "ULTIMATE NEXT.JS FULLSTACK COURSE" by [Dev Ed](https://x.com/developedbyed).
