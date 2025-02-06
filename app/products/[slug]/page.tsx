@@ -53,7 +53,7 @@ export default async function Page({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params;
+  const slug = (await params).slug;
 
   const variant = await db.query.productVariants.findFirst({
     where: eq(productVariants.id, Number(slug)),
