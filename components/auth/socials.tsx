@@ -8,10 +8,10 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Socials() {
   return (
-    <div className="flex flex-col items-center w-full gap-4">
+    <div className="grid gap-4">
       <Button
         variant={"outline"}
-        className="flex gap-4 w-full"
+        className="flex items-center justify-center gap-2 h-12"
         onClick={() =>
           signIn("google", {
             redirect: false,
@@ -24,7 +24,7 @@ export default function Socials() {
       </Button>
       <Button
         variant={"outline"}
-        className="flex gap-4 w-full"
+        className="flex items-center justify-center gap-2 h-12"
         onClick={() =>
           signIn("github", {
             redirect: false,
