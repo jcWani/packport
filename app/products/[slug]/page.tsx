@@ -16,10 +16,12 @@ export const revalidate = 60;
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
+
   const data = await db.query.productVariants.findFirst({
-    where: eq(productVariants.id, Number(params.slug)),
+    where: eq(productVariants.id, Number(slug)),
     with: {
       product: true,
     },
@@ -53,7 +55,7 @@ export default async function Page({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const slug = (await params).slug;
+  const { slug } = await params;
 
   const variant = await db.query.productVariants.findFirst({
     where: eq(productVariants.id, Number(slug)),
